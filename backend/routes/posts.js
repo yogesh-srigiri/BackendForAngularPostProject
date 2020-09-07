@@ -9,10 +9,10 @@ router.post("", (req, res, next) => {
     title: req.body.title,
     content: req.body.content
   });
-  post.save().then(createdPost => {
+  post.save().then(createdPosts => {
     res.status(201).json({
       message: "Post added successfully",
-      postId: createdPost._id
+      postId: createdPosts._id
     });
   });
 });

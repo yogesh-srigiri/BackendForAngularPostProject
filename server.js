@@ -34,7 +34,7 @@ const onError = error => {
             throw error;
 
     }
-}
+};
 
 const onListening = () => {
     const addr = server.address();
